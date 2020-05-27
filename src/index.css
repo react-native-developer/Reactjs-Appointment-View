@@ -1,0 +1,175 @@
+.activitybox{
+	font-family: 'Roboto', sans-serif;    
+  color: #272727;
+  
+  border: 2px solid #ccc;
+border-radius: 6px;
+padding: 20px;
+min-height: 600px;
+}
+.activitybox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.activitybox .activityboxleft {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 35%;
+    flex: 0 0 35%;
+    max-width: 35%;
+}
+.activitybox .activityboxright {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 65%;
+    flex: 0 0 65%;
+    max-width: 65%;
+}
+.activityboxleft h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 30px;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    padding: 22px 0;
+    margin: 0;
+    margin-bottom: 28px;
+}
+.activitylist {
+    list-style-type: none;
+    padding: 0;    
+    margin-right: 20px;
+    margin-top: 0px;
+}
+.activitylist li {
+    background: #FEDD8F;
+    border-top: 2px solid #FFBE22;
+    border-bottom: 2px solid #FFBE22;
+    border-right: 2px solid #FFBE22;
+    border-left: 6px solid #FFBE22;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+}
+.activitylist li h2 {
+    margin: 0;
+    font-size: 16px;
+}
+.activitylist li p {
+    margin: 0;
+    font-size: 14px;
+}
+.headdate {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+.headdate a{
+	text-decoration: none;
+    padding: 0 15px;
+    color: #000;
+}
+.mainhead {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    padding: 3px 0;
+    margin: 0;
+    z-index: 9999;
+}
+.activitygraph .hours {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+        margin-top: 15px;
+    margin-bottom: 0;
+}
+.activitygraph .hours li {
+    width: 12.5%;
+}
+.mainactivitygraph{
+	position: relative;
+}
+.hoursgraph {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    border-top: 1px solid #ccc; 
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+/* .hoursgraph li {
+    width: calc(12.5% - 1px);
+    border-left: 1px solid #ccc;
+    height: 100vh;
+} */
+.hoursgraph li {
+  width: calc(12.5% - 1px);
+  border-left: 1px solid #ccc;
+  height: 100%;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  }
+.hoursgraph li:last-child{
+    border-right: 1px solid #ccc;
+    width: calc(12.5% - 2px);
+}
+.box {
+    position: relative;
+    top: 8px;
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.boxinner, .boxinnerother{	
+    background: #FFBE22;
+    z-index: 1;
+    padding: 20px 0;
+    text-align: center; 
+}
+.boxinnerother{
+    background: #FEDD8F;
+}
+.noactivity {
+    font-size: 20px;
+    text-align: center;
+    margin-top: -5px;
+    text-transform: uppercase;
+    font-weight: 800;
+    background: #FEDD8F;
+    padding: 60px 0;
+}
+.noData {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 22px;
+    text-transform: uppercase;
+    font-weight: 800;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #FEDD8F;
+    padding: 60px 0;
+}
+.text-with-dots { display: block; max-width: 98%; white-space: nowrap; overflow: hidden !important; text-overflow: ellipsis; }
