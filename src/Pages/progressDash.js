@@ -19,7 +19,8 @@ class ProgressDash extends React.Component {
       {hour: "4 PM"},
       {hour: "5 PM"}
     ],
-    initialTime: 10
+    initialTime: 10,
+    activeActivityName: ""
   };
 
   componentDidMount() {
@@ -48,12 +49,14 @@ class ProgressDash extends React.Component {
 
   render() {
     const { selectedDate, newActivities, hourRange } = this.state;
+
+    // activitylist view condition
     let activityList;
     if(newActivities.length > 0){
     activityList = newActivities.map((list, index) => {
         return(
-          <li key={index}>
-              <h2>{list.name}:</h2>
+          <li key={index} className={this.state.activeActivityName === list.name ? 'active' : ''} onClick={() => {this.setState({activeActivityName: list.name })}}>
+              <h2 className="text-with-dots">{list.name}:</h2>
               <p className="text-with-dots">{list.description}</p>
           </li>
         )
@@ -61,6 +64,7 @@ class ProgressDash extends React.Component {
       activityList = <div className="noactivity">No Activity Found</div>;
     }
 
+    // processbar view condition
     let processBar;
     if(newActivities.length > 0){
       processBar = newActivities.map((list, index) => {
@@ -119,7 +123,5 @@ class ProgressDash extends React.Component {
     );
   }
 }
-
-
 
 export default ProgressDash;

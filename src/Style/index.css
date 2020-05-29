@@ -1,11 +1,10 @@
 .activitybox{
-	font-family: 'Roboto', sans-serif;    
-  color: #272727;
-  
-  border: 2px solid #ccc;
-border-radius: 6px;
-padding: 20px;
-min-height: 600px;
+    font-family: 'Roboto', sans-serif;    
+    color: #272727;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    padding: 20px;
+    min-height: 600px;
 }
 .activitybox {
     display: -webkit-box;
@@ -46,13 +45,20 @@ min-height: 600px;
 }
 .activitylist li {
     background: #FEDD8F;
-    border-top: 2px solid #FFBE22;
-    border-bottom: 2px solid #FFBE22;
-    border-right: 2px solid #FFBE22;
-    border-left: 6px solid #FFBE22;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-left: 8px solid #FFBE22;
     margin-bottom: 20px;
     padding: 10px 20px;
 }
+.activitylist li:hover, .activitylist li.active {
+    cursor: pointer;
+    border-top: 4px solid #FFBE22;
+    border-bottom: 4px solid #FFBE22;
+    border-right: 4px solid #FFBE22;
+}
+
 .activitylist li h2 {
     margin: 0;
     font-size: 16px;
@@ -90,7 +96,7 @@ min-height: 600px;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-        margin-top: 15px;
+    margin-top: 15px;
     margin-bottom: 0;
 }
 .activitygraph .hours li {
@@ -116,11 +122,6 @@ min-height: 600px;
     top: 0;
     bottom: 0;
 }
-/* .hoursgraph li {
-    width: calc(12.5% - 1px);
-    border-left: 1px solid #ccc;
-    height: 100vh;
-} */
 .hoursgraph li {
   width: calc(12.5% - 1px);
   border-left: 1px solid #ccc;
@@ -173,3 +174,4 @@ min-height: 600px;
     padding: 60px 0;
 }
 .text-with-dots { display: block; max-width: 98%; white-space: nowrap; overflow: hidden !important; text-overflow: ellipsis; }
+
